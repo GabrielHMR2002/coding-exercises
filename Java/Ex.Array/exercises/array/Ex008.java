@@ -1,3 +1,4 @@
+/*Create a program to read two arrays A and B, each containing N elements. Then, generate a third array C where each element of C is the sum of the corresponding elements from A and B. Print the generated array C. */
 package exercises.array;
 
 import java.util.Locale;
