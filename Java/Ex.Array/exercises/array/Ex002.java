@@ -51,7 +51,7 @@ public class Ex002 {
         for (int i = 0; i < vector.length; i++) {
             System.out.println("Name: ");
 
-            sc.nextLine(); // get line
+            sc.nextLine(); // Consume the newline left by sc.nextInt()
             String name = sc.nextLine();
 
             System.out.println("Price: ");
