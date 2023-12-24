@@ -13,28 +13,23 @@ public class Ex003 {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("How many numbers are you going to type?");
-         
+
         int number = sc.nextInt();
+ 
+        double[] vector = new double[number];
 
-        double[] vector =  new double[number];
-
-        for (int i = 0; i < vector.length; i++){
+        for (int i = 0; i < vector.length; i++) {
             System.out.println("Type a number: ");
             vector[i] = sc.nextDouble();
         }
 
         System.out.println("Here we are the negative numbers: ");
 
-        for(int i = 0; i < vector.length; i++){
-            if(vector[i] < 0) System.out.println(vector[i]);
+        for (int i = 0; i < vector.length; i++) {
+            if (vector[i] < 0)
+                System.out.println(vector[i]);
 
-            
         }
-
-       
-
-
-
 
         sc.close();
     }
