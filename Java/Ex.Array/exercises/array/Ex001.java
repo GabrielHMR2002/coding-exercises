@@ -5,6 +5,8 @@
 these people.
  */
 
+ package exercises.array;
+
 import java.util.Locale;
 import java.util.Scanner;
 
