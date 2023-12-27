@@ -1,4 +1,7 @@
+/*Create a program to read data from N figures (N provided by the user) and then display the areas of these figures in the same order they were entered */
+
 package Exercicios.Java.POO;
+
 
 import java.util.ArrayList;
 import java.util.List;
