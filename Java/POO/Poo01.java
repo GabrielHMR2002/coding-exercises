@@ -1,3 +1,10 @@
+/*A company has its own employees and outsourced employees.
+For each employee, it is desired to record the name, hours worked, and hourly rate. Outsourced employees also have an additional expense.
+The payment for employees corresponds to the hourly rate multiplied by the hours worked, with outsourced employees receiving a bonus equivalent to 110% of their additional expense.
+Create a program to read data for N employees (N provided by the user) and store them in a list. After reading all the data, display the name and payment of each employee in the same order they were entered.
+Build the program according to the project on the side. See an example on the next page. */
+
+
 package Exercicios.Java.POO;
 
 import java.util.ArrayList;
@@ -87,7 +94,7 @@ public class Poo01 {
     public static void main(String[] args) {
 
         List<Employee> employee = new ArrayList<>();
-        List<OutSourceEmployee> outSourceEmployee = new ArrayList<>();
+        List<Employee> outSourceEmployee = new ArrayList<>();
 
         Locale.setDefault(Locale.US);
 
@@ -121,7 +128,7 @@ public class Poo01 {
 
                     double additionalCharge = sc.nextDouble();
 
-                    OutSourceEmployee e = new OutSourceEmployee(name, hours, valuePerHour, additionalCharge);
+                    Employee e = new OutSourceEmployee(name, hours, valuePerHour, additionalCharge);
 
                     outSourceEmployee.add(e);
 
@@ -137,20 +144,7 @@ public class Poo01 {
                     break;
             }
 
-            /*
-             * if (option.equals("y")) {
-             * 
-             * OutSourceEmployee e = new OutSourceEmployee(name, hours, valuePerHour,
-             * additionalCharge);
-             * outSourceEmployee.add(e);
-             * 
-             * } else if (option.equals("n")) {
-             * Employee e = new Employee(name, hours, valuePerHour);
-             * employee.add(e);
-             * } else {
-             * System.out.println("Invalid Option!");
-             * }
-             */
+        
         }
 
         System.out.println("PAYMENTS: \n");
@@ -161,7 +155,7 @@ public class Poo01 {
             System.out.println();
         }
 
-        for (OutSourceEmployee e : outSourceEmployee) {
+        for (Employee e : outSourceEmployee) {
             System.out.println(e.getName());
             System.out.println(e.payment());
             System.out.println();
