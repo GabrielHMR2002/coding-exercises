@@ -3,6 +3,7 @@ let myAge = 21;
 
 console.log("My name is ", myName ," and my age is ", myAge)
 
+
 // let name != let NAME
 
 let name, age; // undefined
