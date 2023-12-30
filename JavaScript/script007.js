@@ -1,6 +1,6 @@
 // Array
 
-
+// any types of variable in the same array
 let family = ['gabriel', 'henrique', 'miranda', 'rodrigues', 21, true]
 console.log(family)
 console.log(family[0])
